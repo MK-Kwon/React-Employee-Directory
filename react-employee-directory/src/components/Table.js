@@ -27,6 +27,10 @@ export default function Table() {
             { name: 'Zerya', surname: 'Baran', employeeID: 207717, jobTitle: 34 },
             { name: 'Rikke', surname: 'Hansen', employeeID: 393748, jobTitle: 2 },
             { name: 'Camil', surname: 'Chacon', employeeID: 653940, jobTitle: 63 },
+            { name: 'Lynn', surname: 'Smith', salary: 93012.89, employeeID: 687432, jobTitle: 3 },
+            { name: 'Amber', surname: 'Ly', salary: 70432.15, employeeID: 490021, jobTitle: 63 },
+            { name: 'Kevin', surname: 'Garza', salary: 85943.20, employeeID: 382941, jobTitle: 34 },
+            { name: 'Israel', surname: 'Medina', salary: 40592.14, employeeID: 583021, jobTitle: 5 },
         ],
     });
 
