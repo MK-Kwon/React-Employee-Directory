@@ -41,6 +41,16 @@ export default function Table() {
             title="Employee Database"
             columns={state.columns}
             data={state.data}
+            style={{ 
+                backgroundColor: 'rgba(255, 255, 255, 0.75)', 
+            }}
+            options= {{ 
+                headerStyle: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.4)',
+                    fontSize: '18px',
+                    fontWeight: 'bold'
+                }
+            }}
             editable={{
                 onRowAdd: newData =>
                     new Promise(resolve => {
