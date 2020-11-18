@@ -1,37 +1,82 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MaterialTable from 'material-table';
 
-class Table extends Component {
-    render() {
-        return (
-            <MaterialTable
-                title='Employee Database'
-                columns={[
-                    { title: 'Name', field: 'name' },
-                    { title: 'Surname', field: 'surname' },
-                    { title: 'Employee ID', field: 'employeeID' },
-                    { 
-                        title: 'Job Title',
-                        field: 'jobTitle',
-                        lookup: { 30: 'Graphic Design', 70: 'IT', 1: 'CEO', 12: 'HR', 25: 'Accounting' },
-                    },
-                ]}
-                data={[
-                    { name: 'Katy', surname: 'Lee', employeeID: 981987, jobTitle: 63 },
-                    { name: 'Tom', surname: 'Schreiber', employeeID: 284721, jobTitle: 3 },
-                    { name: 'Jessica', surname: 'Wilson', employeeID: 329479, jobTitle: 1 },
-                    { name: 'Susan', surname: 'Browder', employeeID: 833271, jobTitle: 2 },
-                    { name: 'Joe', surname: 'Bradley', employeeID: 786542, jobTitle: 34 },
-                    { name: 'Paul', surname: 'Green', employeeID: 382813, jobTitle: 3 },
-                    { name: 'Zerya Betül', surname: 'Baran', employeeID: 207717, jobTitle: 34 },
-                    { name: 'Rikke', surname: 'Hansen', employeeID: 393748, jobTitle: 2 },
-                ]}
-                options={{
-                    sorting: true
-                }}
-            />
-        )
-    }
-}
+export default function Table() {
+    const [state, setState] = React.useState({
+        columns: [
+            { title: 'Name', field: 'name' },
+            { title: 'Surname', field: 'surname' },
+            { title: 'Employee ID', field: 'employeeID', type: 'numeric' },
+            {
+                title: 'Job Title',
+                field: 'jobTitle',
+                lookup: { 34: 'HR Specialist', 63: 'CEO', 1: 'Director', 2: 'Accounting', 3: 'Software Developer', 4: 'Contractor' },
+            },
+        ],
+        data: [
+            { name: 'Mehmet', surname: 'Baran', employeeID: 981987, jobTitle: 63 },
+            { name: 'Wolfgang', surname: 'Schreiber', employeeID: 284721, jobTitle: 3 },
+            { name: 'Matilde', surname: 'Wilson', employeeID: 329479, jobTitle: 1 },
+            { name: 'Anthony', surname: 'Thomas', employeeID: 902847, jobTitle: 3 },
+            { name: 'Claire', surname: 'Underwood', employeeID: 832110, jobTitle: 4 },
+            { name: 'Arya', surname: 'Stark', employeeID: 768390, jobTitle: 34 },
+            { name: 'Henry', surname: 'Hanks', employeeID: 899003, jobTitle: 1 },
+            { name: 'Maria', surname: 'Browder', employeeID: 833271, jobTitle: 2 },
+            { name: 'Joe', surname: 'Bradley', employeeID: 786542, jobTitle: 34 },
+            { name: 'Paul', surname: 'Green', employeeID: 382813, jobTitle: 3 },
+            { name: 'Zerya', surname: 'Baran', employeeID: 207717, jobTitle: 34 },
+            { name: 'Rikke', surname: 'Hansen', employeeID: 393748, jobTitle: 2 },
+            { name: 'Camil', surname: 'Chacon', employeeID: 653940, jobTitle: 63 },
+        ],
+    });
 
-export default Table;
+    return (
+        <MaterialTable
+            title="Employee Database"
+            columns={state.columns}
+            data={state.data}
+            editable={{
+                onRowAdd: newData =>
+                    new Promise(resolve => {
+                        setTimeout(() => {
+                            resolve();
+                            setState(prevState => {
+                                const data = [...prevState.data];
+                                data.push(newData);
+                                return { ...prevState, data };
+                            });
+                        }, 600);
+                    }),
+                onRowUpdate: (newData, oldData) =>
+                    new Promise(resolve => {
+                        setTimeout(() => {
+                            resolve();
+                            if (oldData) {
+                                setState(prevState => {
+                                    // Copy previous state data to a new array
+                                    const data = [...prevState.data];
+                                    // Get edited row index
+                                    const index = data.indexOf(oldData);
+                                    // Replace old row with new one
+                                    data[index] = newData;
+                                    return { ...prevState, data };
+                                });
+                            }
+                        }, 600);
+                    }),
+                    onRowDelete: oldData =>
+                    new Promise(resolve => {
+                        setTimeout(() => {
+                            resolve();
+                            setState(prevState => {
+                                const data = [...prevState.data];
+                                const index = data.indexOf(oldData);
+                                data.splice(index, 1);
+                                return { ...prevState, data };
+                            });
+                        }, 600);
+                    }),
+            }}
+        />
+    );
+}
