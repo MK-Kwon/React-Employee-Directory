@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+<h1 align="center">Welcome to React-Employee-Directory 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🏠 [Homepage](https://github.com/MK-Kwon/React-Employee-Directory/)
 
-## Available Scripts
+### ✨ [Demo](https://react-employee-directory-mk.herokuapp.com/)
 
-In the project directory, you can run:
+### Deployed App: https://react-employee-directory-mk.herokuapp.com/
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# React-Employee-Directory
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> A responsive, single-page React employee directory application that enables sorting and filtering employee data. The application uses React props, stateful and stateless components. The Bootstrap CSS framework is used for styling. For this assignment, I broke up the app's UI into components, managed component state and responded to user events. An employee or manager would benefit greatly from being able to view and filter non-sensitive data about other employees. 
 
-### `npm test`
+<img src="https://thumbs.gfycat.com/ConventionalCleverJackrabbit-size_restricted.gif" width="800">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="./src/components/images/Screen Shot 2020-11-19 at 3.11.39 pm.png" width="100%" height="auto">
 
-### `npm run build`
+<img src="./src/components/images/Screen Shot 2020-11-19 at 3.11.56 pm" width="100%" height="auto">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="./src/components/images/Screen Shot 2020-11-19 at 3.12.15 pm" width="100%" height="auto">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies
+React, JavaScript, Css, Material UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+```sh
+1. Open https://react-employee-directory-mk.herokuapp.com/
+2. Click 'Pen' icon to edit the employee information
+3. Click 'Bin' icon to remove the employee information
+4. Type in any search term in the input form on the top right corner for searching the employee information
+5. Use drop down menu on the bottom right corner to change number of rows display on the page
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Author
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+👤 **Min Kyung Kwon**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Github: [@MK-Kwon](https://github.com/MK-Kwon)
+* LinkedIn: [@min-kyung-kwon](https://linkedin.com/in/min-kyung-kwon)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Show your support
 
-## Learn More
+Give a ⭐️ if this project helped you!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
