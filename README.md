@@ -16,7 +16,7 @@
 
 <img src="https://thumbs.gfycat.com/ConventionalCleverJackrabbit-size_restricted.gif" width="800">
 
-<img src="./react-employee-directory/src/components/images/Screen Shot.png" width="100%" height="auto">
+<img src="http://drive.google.com/uc?id=1jExF_itGogTexm_Q-6ZEmHRpC4CNKsLU" width ="80%" height="auto">
 
 
 ## Technologies
