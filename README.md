@@ -14,7 +14,7 @@
 
 > A responsive, single-page React employee directory application that enables sorting and filtering employee data. The application uses React props, stateful and stateless components. Material-UI was used for generating the template table then all employee info was hard coded in it. For this assignment, I broke up the app's UI into components, managed component state and responded to user events. An employee or manager would benefit greatly from being able to view and filter non-sensitive data about other employees. 
 
-<img src="https://thumbs.gfycat.com/ConventionalCleverJackrabbit-size_restricted.gif" width="800">
+<img src="https://thumbs.gfycat.com/ConventionalCleverJackrabbit-size_restricted.gif" width ="100%" height="auto>
 
 <img src="http://drive.google.com/uc?id=1jExF_itGogTexm_Q-6ZEmHRpC4CNKsLU" width ="100%" height="auto">
 
