@@ -36,7 +36,7 @@ React, JavaScript, Css, Material UI
 👤 **Min Kyung Kwon**
 
 * Github: [@MK-Kwon](https://github.com/MK-Kwon)
-* LinkedIn: [@min-kyung-kwon](https://linkedin.com/in/min-kyung-kwon)
+* LinkedIn: [@MK-Kwon](https://linkedin.com/in/MK-Kwon)
 
 ## Show your support
 
