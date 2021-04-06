@@ -20,7 +20,7 @@
 
 
 ## Technologies
-React, JavaScript, Css, Material UI
+React, JavaScript, css, Material UI
 
 ## Usage
 
